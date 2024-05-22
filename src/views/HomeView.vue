@@ -1,18 +1,9 @@
+<script setup lang="ts">
+import InputField from '@/components/InputField.vue';
+</script>
+
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <InputField />
   </div>
 </template>
-
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld,
-  },
-};
-</script>

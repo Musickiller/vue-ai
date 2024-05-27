@@ -2,10 +2,11 @@
   <div class="home">
     <SubmitForm @submit="asyncGenerationRequest"/>
     <!-- todo: make message bubbles for each message in the list-->
-    <MessageBubble
-      :message="message"
-      :responseId="responseId"
-    />
+    <div style="display: flex; justify-content: center;">
+      <MessageBubble
+        :message="message"
+        :responseId="responseId"
+    /></div>
   </div>
 </template>
 

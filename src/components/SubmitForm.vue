@@ -21,7 +21,6 @@ export default {
   methods: {
     handleSubmit() {
       console.log('submit', this.inputValue);
-      //   this.$emit('submit', this.inputValue);
       this.inputValue = '';
     },
   },

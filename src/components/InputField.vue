@@ -3,6 +3,7 @@
     <input
       id="ai_prompt"
       v-model="inputValue"
+      @input="$emit('update:modelValue', inputValue)"
       type="text"
       v-bind="$attrs"
       p="x-4 y-2"
@@ -13,6 +14,23 @@
       outline="none active:none"
       placeholder="Say hi!"
     />
-    Prompt for AI
   </label>
 </template>
+
+<script>
+export default {
+  name: 'InputField',
+  props: ['modelValue'],
+  data() {
+    return {
+      inputValue: this.modelValue,
+    };
+  },
+
+  watch: {
+    modelValue(newValue) {
+      this.inputValue = newValue;
+    },
+  },
+};
+</script>

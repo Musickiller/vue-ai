@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import InputField from '@/components/InputField.vue';
+import SubmitForm from '@/components/SubmitForm.vue';
 </script>
 
 <template>
   <div class="home">
-    <InputField />
+    <SubmitForm />
   </div>
 </template>
